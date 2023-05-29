@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SMT Shell</string>
+    <string name="app_conflict_prompt">The apps below are in conflict with SMT Shell, and will prevent the exploit from running, please tap to remove each of them.</string>
+    <string name="no_conflicts">No conflicting apps found. Exploit has been executed; please check your reverse shell.</string>
+    <string name="exploit_prompt">Tap the button below to trigger the exploit and activate the SMT Shell API.</string>
+    <string name="exploit">Exploit</string>
+    <string name="exploit_with_shizuku">Exploit with Shizuku</string>
+    <string name="downgrade_smt">Downgrade SMT</string>
+    <string name="downgrade_smt_prompt_shizuku">Before triggering the exploit, you must downgrade the Samsung SMT app to a vulnerable version. You may do this automatically by tapping the button below.</string>
+    <string name="downgrade_smt_prompt">Before triggering the exploit, you must downgrade the Samsung SMT app to a vulnerable version. Please see the README for instructions, or grant Shizuku permissions to do this automatically. When done, tap below to continue.</string>
+    <string name="proceed">proceed</string>
+    <string name="example_title">Short Title</string>
+    <string name="example_details">This is some longer detail about this button. Maybe the text will even wrap around the screen.</string>
+    <string name="example_btn">click me</string>
+    <string name="perm_label_system_command">Execute Commands as System</string>
+    <string name="perm_desc_system_command">execute shell commands as system (uid 1000)</string>
+    <string name="perm_label_load_library">Load Native Libraries as System</string>
+    <string name="perm_desc_load_library">execute arbitrary code as system (uid 1000)</string>
+</resources>

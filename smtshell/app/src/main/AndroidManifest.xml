@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.samsung.SMT.lang.smtshell">
+
+    <permission android:name="smtshell.permission.SELF" android:protectionLevel="signature" />
+    <uses-permission android:name="smtshell.permission.SELF" />
+
+    <permission android:name="smtshell.permission.SYSTEM_COMMAND"
+        android:label="@string/perm_label_system_command"
+        android:description="@string/perm_desc_system_command"
+        android:protectionLevel="dangerous" />
+    <permission android:name="smtshell.permission.LOAD_LIBRARY"
+        android:label="@string/perm_label_load_library"
+        android:description="@string/perm_desc_load_library"
+        android:protectionLevel="dangerous" />
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk tools:overrideLibrary="net.blufenix.smtshell.api, rikka.shizuku.api, rikka.shizuku.shared, rikka.shizuku.aidl, rikka.shizuku.provider" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".SMTShell"
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ConflictActivity"
+            android:exported="false" />
+
+        <activity android:name=".AllTheButtons"
+            android:exported="false" />
+
+        <activity android:name=".ShellActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.samsung.SMT.lang.smtshell.MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.REBOOT">
+            <intent-filter>
+                <action android:name="com.samsung.SMT.lang.smtshell" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:multiprocess="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    </application>
+
+</manifest>
