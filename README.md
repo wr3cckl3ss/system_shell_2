@@ -15,8 +15,8 @@ SMT Shell by BLuFeNiX with a twist of my own UPDATED & UPGRADED. #system_shell_2
     <img src="screenshots/ss5.png" width="20%" /> 
     <img src="screenshots/ss6.png" width="20%" />  
 </div>
+ 
 
-. 
 
 
 ## Credits
