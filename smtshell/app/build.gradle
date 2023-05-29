@@ -6,8 +6,8 @@ android {
         applicationId "com.samsung.SMT.lang.smtshell"
         minSdkVersion 22 // must be 22 or lower for the exploit to work
         targetSdkVersion 33
-        versionCode 20230324
-        versionName "2.0"
+        versionCode 20230528
+        versionName "3.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         externalNativeBuild {
             ndkBuild {
