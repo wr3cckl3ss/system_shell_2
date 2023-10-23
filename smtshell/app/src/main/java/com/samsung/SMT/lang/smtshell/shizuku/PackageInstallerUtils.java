@@ -64,7 +64,7 @@ public class PackageInstallerUtils {
                 installerAttributionTag = context.getAttributionTag();
             }
             PackageInstaller packageInstaller = PackageInstallerUtils.createPackageInstaller(
-                    appContext, _packageInstaller, "com.sec.android.preloadinstaller", installerAttributionTag, 0);
+                    appContext, _packageInstaller, "PrePackageInstaller", installerAttributionTag, 0);
 
             PackageInstaller.SessionParams params = new PackageInstaller.SessionParams(PackageInstaller.SessionParams.MODE_FULL_INSTALL);
             int installFlags = PackageInstallerUtils.getInstallFlags(params);
