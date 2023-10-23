@@ -19,18 +19,7 @@ SMT Shell by BLuFeNiX with a twist of my own UPDATED & UPGRADED. #system_shell_2
 
 
 
-## Credits
-    BLuFeNiX (https://github.com/BLuFeNiX/)
-
-    SMTShell (https://github.com/BLuFeNiX/SMTShell/)
-
-    SMTShell-API (https://github.com/BLuFeNiX/SMTShell-API/)
-
-#### Thanks for the challenge and your patience. I still dont know what I'm doing but I'm getting there.
-
-
-
-## *New* Bypass Method
+## Bypass Method
 The method for bypassing the One UI 5.1 was found by one individual. Full credit goes to him and his efforts on making this bypass available. Many thanks to k0mraid3 for his contribution. https://twitter.com/k0mraid3
 
 #### The following is the command that bypasses the FEB patch but stops at MAY 2023.
@@ -39,7 +28,22 @@ adb install -d -i com.sec.android.preloadinstaller /data/local/tmp/com.samsung.S
 pm install -d -i com.sec.android.preloadinstaller /data/local/tmp/com.samsung.SMT_v3.0.02.2.apk
 ```
 
+## Updated Command OCT 2023
+The following command is in reference to my #system3 project and its success. 
 
+THIS WILL NOT DOWNGRADE SMT, PAST THE AOSP PATCH OF MAY 2023.
+FOR SYSTEM SHELL ACCESS, PAST THE AOSP PATCH, see [#system3](https://github.com/wr3cckl3ss1/system3)
+```
+adb install -d -i PrePackageInstaller /data/local/tmp/com.samsung.SMT_v3.0.02.2.apk
+pm install -d -i PrePackageInstaller /data/local/tmp/com.samsung.SMT_v3.0.02.2.apk
+```
+
+## Credits
+    BLuFeNiX (https://github.com/BLuFeNiX/)
+
+    SMTShell (https://github.com/BLuFeNiX/SMTShell/)
+
+    SMTShell-API (https://github.com/BLuFeNiX/SMTShell-API/)
 
 
 
